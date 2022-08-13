@@ -15,16 +15,16 @@ import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 @Mod.EventBusSubscriber(modid = CuriousLanterns.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ClientModEvents {
-	
-	@SubscribeEvent
-	public static void onClientSetupEvent(FMLClientSetupEvent e) {
-		CuriosRendererRegistry.register(Items.LANTERN, LanternRenderer::new);
-		CuriosRendererRegistry.register(Items.SOUL_LANTERN, LanternRenderer::new);
-	}
-	
-	@SubscribeEvent
-	public static void onModelregister(ModelRegistryEvent event) {
-		ForgeModelBakery.addSpecialModel(LanternModels.LANTERN);
-		ForgeModelBakery.addSpecialModel(LanternModels.SOUL_LANTERN);
-	}
+
+//	@SubscribeEvent
+//	public static void onClientSetupEvent(FMLClientSetupEvent e) {
+//		CuriosRendererRegistry.register(Items.LANTERN, LanternRenderer::new);
+//		CuriosRendererRegistry.register(Items.SOUL_LANTERN, LanternRenderer::new);
+//	}
+//
+//	@SubscribeEvent
+//	public static void onModelregister(ModelRegistryEvent event) {
+//		ForgeModelBakery.addSpecialModel(LanternModels.LANTERN);
+//		ForgeModelBakery.addSpecialModel(LanternModels.SOUL_LANTERN);
+//	}
 }
